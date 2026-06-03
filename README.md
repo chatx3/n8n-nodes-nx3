@@ -4,6 +4,8 @@
 [![npm downloads](https://img.shields.io/npm/dm/n8n-nodes-nx3.svg)](https://www.npmjs.com/package/n8n-nodes-nx3)
 [![n8n community node](https://img.shields.io/badge/n8n-community%20node-FF6D5A)](https://docs.n8n.io/integrations/community-nodes/)
 
+**🇫🇷 Français** · [🇬🇧 English](README.en.md)
+
 > Nœud communautaire **nX3 by IntellX** permettant d'orchestrer vos objets et traitements **Sage X3** directement depuis [n8n](https://n8n.io), via la passerelle **ChatX3**.
 
 Ce nœud reproduit le comportement d'un utilisateur X3 (lecture, liste, création, modification d'objets) à travers les web services SOAP de Sage X3, en respectant intégralement les droits de l'utilisateur Syracuse et du dossier associés.
@@ -74,7 +76,7 @@ Avant de commencer, assurez-vous de remplir les conditions suivantes :
 
 > **Chemin d'accès :** `Tout > Développement > Utilitaires > Patchs`
 
-![Écran d'intégration du patch ChatX3 dans Sage X3](1_param_patch_chatx3.png)
+![Écran d'intégration du patch ChatX3 dans Sage X3](images/1_param_patch_chatx3.png)
 
 > [!TIP]
 > Réalisez de préférence l'intégration d'abord sur un environnement de test, et conservez une sauvegarde du dossier avant toute opération.
@@ -89,7 +91,7 @@ Ce patch active la licence n8n personnalisée. Il s'installe **exactement comme 
 2. Dans Sage X3, ouvrez **Développement > Utilitaires > Patchs > Intégration de patchs (PATCH)**.
 3. Reproduisez les cases cochées de la capture ci-dessous, puis lancez l'intégration.
 
-![Écran d'intégration du patch de licence n8n dans Sage X3](2_param_patch_n8n.png)
+![Écran d'intégration du patch de licence n8n dans Sage X3](images/2_param_patch_n8n.png)
 
 ---
 
@@ -99,11 +101,11 @@ Le pool de web services doit être **accessible publiquement ou depuis l'instanc
 
 **a.** Vérifiez la présence d'**au moins un processus enfant SOAP** au niveau du serveur web Syracuse :
 
-![Configuration du processus enfant SOAP sur Syracuse](3_Syracuse_SOAP.png)
+![Configuration du processus enfant SOAP sur Syracuse](images/3_Syracuse_SOAP.png)
 
 **b.** Créez et lancez un **pool de web services** sur le dossier concerné :
 
-![Pool de web services SOAP créé et lancé](4_Pool-SOAP.png)
+![Pool de web services SOAP créé et lancé](images/4_Pool-SOAP.png)
 
 ---
 
@@ -126,7 +128,7 @@ L'utilisateur Syracuse utilisé doit disposer, dans son profil de sécurité, du
 
 > `statusAndUsage` → **Lire**
 
-![Profil de sécurité Syracuse avec le droit statusAndUsage en lecture](5_profil-securite.png)
+![Profil de sécurité Syracuse avec le droit statusAndUsage en lecture](images/5_profil-securite.png)
 
 ---
 
@@ -136,7 +138,7 @@ L'utilisateur X3 du dossier, rattaché à l'utilisateur Syracuse, doit avoir le 
 
 > **Connexion services web** → **Oui**
 
-![Fiche utilisateur X3 avec la connexion services web activée](6_Utilisateur-web-serv.png)
+![Fiche utilisateur X3 avec la connexion services web activée](images/6_Utilisateur-web-serv.png)
 
 ---
 
@@ -144,23 +146,23 @@ L'utilisateur X3 du dossier, rattaché à l'utilisateur Syracuse, doit avoir le 
 
 **1.** Dans le menu de votre instance n8n, ouvrez **Paramètres > Community nodes**.
 
-![Menu Paramètres > Community nodes dans n8n](7_n8n_1.png)
+![Menu Paramètres > Community nodes dans n8n](images/7_n8n_1.png)
 
 **2.** Cliquez sur le bouton **Install**.
 
-![Bouton Install des Community nodes](8_n8n_2.png)
+![Bouton Install des Community nodes](images/8_n8n_2.png)
 
 **3.** Saisissez le nom du package npm `n8n-nodes-nx3`, cochez la case d'acceptation des risques, puis cliquez sur **Install**.
 
-![Saisie du package n8n-nodes-nx3 et acceptation](9_n8n_3.png)
+![Saisie du package n8n-nodes-nx3 et acceptation](images/9_n8n_3.png)
 
 **4.** Pour vérifier l'installation, créez un nouveau workflow et recherchez **« sage »** dans la liste des nœuds.
 
-![Recherche du nœud sage dans un nouveau workflow](10_n8n_4.png)
+![Recherche du nœud sage dans un nouveau workflow](images/10_n8n_4.png)
 
 **5.** Le nœud **nX3 by IntellX** doit apparaître avec ses actions disponibles.
 
-![Nœud nX3 by IntellX et ses actions](11_n8n_5.png)
+![Nœud nX3 by IntellX et ses actions](images/11_n8n_5.png)
 
 > [!NOTE]
 > L'installation de Community nodes peut nécessiter les droits administrateur sur l'instance n8n. Sur n8n Cloud, vérifiez que les Community nodes sont autorisés sur votre offre.
