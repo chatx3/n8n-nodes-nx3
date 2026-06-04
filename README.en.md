@@ -70,7 +70,7 @@ Before you begin, make sure the following conditions are met:
 
 ### 1.1 ChatX3 patch
 
-1. Download the ChatX3 patch: **[📥 Download the ChatX3 patch](#)** <!-- TODO: replace with the real URL -->
+1. Download the ChatX3 patch: **[📥 Download the ChatX3 patch](https://intellx.chat/)** <!-- TODO: replace with the real URL -->
 2. In Sage X3, open **Development > Utilities > Patches > Patch integration (PATCH)**.
 3. Reproduce exactly the checkboxes shown in the screenshot below, then run the integration.
 
@@ -87,7 +87,7 @@ Before you begin, make sure the following conditions are met:
 
 This patch enables the custom n8n license. It is installed **exactly like the ChatX3 patch** ([§1.1](#11-chatx3-patch)).
 
-1. Download the n8n patch: **[📥 Download the custom n8n patch](#)** <!-- TODO: replace with the real URL -->
+1. Download the n8n patch: **[📥 Download the custom n8n patch](https://intellx.chat/)** <!-- TODO: replace with the real URL -->
 2. In Sage X3, open **Development > Utilities > Patches > Patch integration (PATCH)**.
 3. Reproduce the checkboxes shown in the screenshot below, then run the integration.
 
