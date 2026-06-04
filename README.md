@@ -70,7 +70,7 @@ Avant de commencer, assurez-vous de remplir les conditions suivantes :
 
 ### 1.1 Patch ChatX3
 
-1. Téléchargez le patch ChatX3 : **[📥 Télécharger le patch ChatX3](#)** <!-- TODO: remplacer par l'URL réelle -->
+1. Téléchargez le patch ChatX3 : **[📥 Télécharger le patch ChatX3](https://intellx.chat/)** <!-- TODO: remplacer par l'URL réelle -->
 2. Dans Sage X3, ouvrez **Développement > Utilitaires > Patchs > Intégration de patchs (PATCH)**.
 3. Reproduisez exactement les cases cochées de la capture ci-dessous, puis lancez l'intégration.
 
