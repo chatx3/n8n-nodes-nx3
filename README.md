@@ -87,7 +87,7 @@ Avant de commencer, assurez-vous de remplir les conditions suivantes :
 
 Ce patch active la licence n8n personnalisée. Il s'installe **exactement comme le patch ChatX3** ([§1.1](#11-patch-chatx3)).
 
-1. Téléchargez le patch n8n : **[📥 Télécharger le patch n8n personnalisé](#)** <!-- TODO: remplacer par l'URL réelle -->
+1. Téléchargez le patch n8n : **[📥 Télécharger le patch n8n personnalisé](https://intellx.chat/)** <!-- TODO: remplacer par l'URL réelle -->
 2. Dans Sage X3, ouvrez **Développement > Utilitaires > Patchs > Intégration de patchs (PATCH)**.
 3. Reproduisez les cases cochées de la capture ci-dessous, puis lancez l'intégration.
 
