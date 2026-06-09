@@ -18,12 +18,11 @@ Ce nœud reproduit le comportement d'un utilisateur X3 (lecture, liste, créatio
 - [Prérequis](#prérequis)
 - [1. Installation](#1-installation)
   - [1.1 Patch ChatX3](#11-patch-chatx3)
-  - [1.2 Patch de licence n8n](#12-patch-de-licence-n8n)
-  - [1.3 Pool de web services](#13-pool-de-web-services)
-  - [1.4 Connectivité serveur X3 → ChatX3](#14-connectivité-serveur-x3--chatx3)
-  - [1.5 Droits de l'utilisateur Syracuse](#15-droits-de-lutilisateur-syracuse)
-  - [1.6 Droit web services de l'utilisateur X3](#16-droit-web-services-de-lutilisateur-x3)
-  - [1.7 Installation du package dans n8n](#17-installation-du-package-dans-n8n)
+  - [1.2 Pool de web services](#13-pool-de-web-services)
+  - [1.3 Connectivité serveur X3 → ChatX3](#14-connectivité-serveur-x3--chatx3)
+  - [1.4 Droits de l'utilisateur Syracuse](#15-droits-de-lutilisateur-syracuse)
+  - [1.5 Droit web services de l'utilisateur X3](#16-droit-web-services-de-lutilisateur-x3)
+  - [1.6 Installation du package dans n8n](#17-installation-du-package-dans-n8n)
 - [2. Utilisation](#2-utilisation)
   - [Informations générales](#informations-générales)
   - [Formats attendus](#formats-attendus)
@@ -57,7 +56,6 @@ Les flux se déroulent **directement entre votre instance n8n et votre environne
 Avant de commencer, assurez-vous de remplir les conditions suivantes :
 
 - [ ] Le **patch ChatX3** est installé sur le dossier X3 ([§1.1](#11-patch-chatx3))
-- [ ] Le **patch de licence n8n** personnalisé est installé ([§1.2](#12-patch-de-licence-n8n))
 - [ ] Un **pool de web services** est créé, lancé et accessible depuis n8n ([§1.3](#13-pool-de-web-services))
 - [ ] Le serveur Runtime X3 peut **joindre l'URL de licence ChatX3** ([§1.4](#14-connectivité-serveur-x3--chatx3))
 - [ ] L'utilisateur Syracuse dispose du droit `statusAndUsage > Lire` ([§1.5](#15-droits-de-lutilisateur-syracuse))
@@ -83,19 +81,7 @@ Avant de commencer, assurez-vous de remplir les conditions suivantes :
 
 ---
 
-### 1.2 Patch de licence n8n
-
-Ce patch active la licence n8n personnalisée. Il s'installe **exactement comme le patch ChatX3** ([§1.1](#11-patch-chatx3)).
-
-1. Téléchargez le patch n8n : **[📥 Télécharger le patch n8n personnalisé](https://intellx.chat/)** <!-- TODO: remplacer par l'URL réelle -->
-2. Dans Sage X3, ouvrez **Développement > Utilitaires > Patchs > Intégration de patchs (PATCH)**.
-3. Reproduisez les cases cochées de la capture ci-dessous, puis lancez l'intégration.
-
-![Écran d'intégration du patch de licence n8n dans Sage X3](images/2_param_patch_n8n.png)
-
----
-
-### 1.3 Pool de web services
+### 1.2 Pool de web services
 
 Le pool de web services doit être **accessible publiquement ou depuis l'instance n8n**.
 
@@ -109,7 +95,7 @@ Le pool de web services doit être **accessible publiquement ou depuis l'instanc
 
 ---
 
-### 1.4 Connectivité serveur X3 → ChatX3
+### 1.3 Connectivité serveur X3 → ChatX3
 
 Afin de contrôler la licence ChatX3, une connexion est établie **aléatoirement une à deux fois par semaine**. L'URL suivante doit être accessible depuis votre **serveur Runtime X3** :
 
@@ -122,7 +108,7 @@ https://akfcgzazfvqipbjvdemn.supabase.co
 
 ---
 
-### 1.5 Droits de l'utilisateur Syracuse
+### 1.4 Droits de l'utilisateur Syracuse
 
 L'utilisateur Syracuse utilisé doit disposer, dans son profil de sécurité, du droit :
 
@@ -132,7 +118,7 @@ L'utilisateur Syracuse utilisé doit disposer, dans son profil de sécurité, du
 
 ---
 
-### 1.6 Droit web services de l'utilisateur X3
+### 1.5 Droit web services de l'utilisateur X3
 
 L'utilisateur X3 du dossier, rattaché à l'utilisateur Syracuse, doit avoir le champ :
 
@@ -142,7 +128,7 @@ L'utilisateur X3 du dossier, rattaché à l'utilisateur Syracuse, doit avoir le 
 
 ---
 
-### 1.7 Installation du package dans n8n
+### 1.6 Installation du package dans n8n
 
 **1.** Dans le menu de votre instance n8n, ouvrez **Paramètres > Community nodes**.
 
